@@ -1,0 +1,31 @@
+git basic commands
+
+install git
+
+cd chef-repo/
+ git init
+ git add *
+ git commit -m "chef-repo_24_12_2015_running"
+
+ git remote -v
+
+git config --global user.name "maheshlakade148"
+git config --global user.email "maheshlakade148@gmail.com"
+
+git remote add origin git@github.com:maheshlakade148/chef-repo.git
+
+git push -u origin master   //if not work
+
+//use root user for accessing github is best way
+ sudo su -
+
+ssh-keygen -t rsa
+   cat /root/.ssh/id_rsa.pub 
+//copy this key to github repo
+
+git init
+git add *
+  158  git commit -m "24_12_2015_chef_repo_running"
+  159  git pull -u origin master
+  160  git push -u origin master
+
