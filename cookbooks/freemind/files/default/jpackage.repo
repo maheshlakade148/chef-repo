@@ -1,0 +1,6 @@
+[jpackage]
+name=JPackage
+baseurl=http://mirrors.dotsrc.org/jpackage/1.6/generic/free
+enabled=1
+gpgcheck=0
+

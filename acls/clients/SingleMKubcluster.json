@@ -1,0 +1,49 @@
+{
+  "create": {
+    "actors": [
+      "SingleMKubcluster",
+      "pivotal"
+    ],
+    "groups": [
+      "admins"
+    ]
+  },
+  "read": {
+    "actors": [
+      "SingleMKubcluster",
+      "pivotal"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "update": {
+    "actors": [
+      "SingleMKubcluster",
+      "pivotal"
+    ],
+    "groups": [
+      "admins"
+    ]
+  },
+  "delete": {
+    "actors": [
+      "SingleMKubcluster",
+      "pivotal"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "grant": {
+    "actors": [
+      "SingleMKubcluster",
+      "pivotal"
+    ],
+    "groups": [
+      "admins"
+    ]
+  }
+}

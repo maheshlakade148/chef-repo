@@ -1,0 +1,5 @@
+[freemind]
+name=FreeMind
+baseurl=http://eric.lavar.de/comp/linux/rpm/noarch
+enabled=1
+gpgcheck=0

@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "cookbook_versions": {
+    "nginx": "1.8.0"
+  },
+  "default_attributes": {
+    "vhost": [
+      {
+        "port": "8080"
+      }
+    ]
+  }
+}

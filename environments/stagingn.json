@@ -1,0 +1,10 @@
+{
+  "name": "stagingn",
+  "default_attributes": {
+    "apache": {
+      "prefork": {
+        "startservers": "30"
+      }
+    }
+  }
+}

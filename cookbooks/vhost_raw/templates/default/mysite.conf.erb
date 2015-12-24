@@ -1,0 +1,9 @@
+server {
+    listen <%= default[:"vhost"][:"port"] %>;
+
+    server_name <%= node[:vhost][:site_name] %> www.<%= node[:vhost][:site_name] %>;
+
+    root <%= node[:vhost][:site_path] %>;
+
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "webserver",
+  "description": "My Webserver role",
+  "default_attributes": {
+    "app": [
+      "ip[172.16.0.10]"
+    ]
+  },
+  "run_list": [
+    "recipe[nginx]"
+  ]
+}

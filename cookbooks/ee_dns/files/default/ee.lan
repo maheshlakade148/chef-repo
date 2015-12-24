@@ -1,0 +1,12 @@
+
+$TTL 2D
+@       IN  SOA  gateway.ee.lan. root.ee.lan. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+
+@               IN      NS      gateway.ee.lan.
+@               IN      A       192.168.1.5
+gateway         IN       A      192.168.1.5

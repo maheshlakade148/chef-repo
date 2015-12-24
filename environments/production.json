@@ -1,0 +1,10 @@
+{
+  "name": "production",
+  "default_attributes": {
+    "vhost": {
+      "port": "80",
+      "site_name": "",
+      "index_data": "we are in production"
+    }
+  }
+}

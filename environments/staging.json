@@ -1,0 +1,10 @@
+{
+  "name": "staging",
+  "default_attributes": {
+    "vhost": {
+      "port": "8080",
+      "site_name": "stag.",
+      "index_data": "We are in staging"
+    }
+  }
+}

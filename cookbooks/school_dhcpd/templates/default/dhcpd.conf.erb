@@ -1,0 +1,1947 @@
+#DHCP Server Configuration file.
+#   see /usr/share/doc/dhcp*/dhcpd.conf.sample
+#   see 'man 5 dhcpd.conf'
+# 
+
+# filename: /etc/dhcp/static_ip.list  (for static ip's alloted).
+
+
+   option domain-name    "myshala.lan";
+   option domain-name-servers 192.168.100.254, 8.8.8.8, 4.2.2.2;
+   option routers 192.168.100.254;
+   default-lease-time 86400;
+   max-lease-time 518400;
+   authoritative;
+   log-facility local7;
+
+
+   subnet 192.168.0.0 netmask 255.255.0.0 {
+    option broadcast-address 192.168.255.255;
+      interface enp1s6;
+       filename                   "pxelinux.0";
+        next-server                192.168.100.170;
+        }
+
+ host china_tablet_Q1011C-1-wifi {
+      	hardware ethernet 00:73:0e:13:d1:e2;
+	fixed-address 192.168.100.168;
+  }
+ host class-hist23 {
+      	hardware ethernet e0:cb:4e:e0:23:b9;
+	fixed-address 192.168.3.202;
+  }
+ host eshala-arjun {
+      	hardware ethernet 14:da:e9:b5:d6:bf;
+	fixed-address 192.168.100.151;
+  }
+ host lab-3-47 {
+      	hardware ethernet 00:24:8c:02:00:6b;
+	fixed-address 192.168.50.145;
+  }
+ host lab-4-32 {
+      	hardware ethernet e0:cb:4e:de:97:a4;
+	fixed-address 192.168.50.178;
+  }
+ host admin-git {
+      	hardware ethernet 52:54:00:ed:6c:64;
+	fixed-address 192.168.10.102;
+  }
+ host class-4-p232 {
+      	hardware ethernet ec:a8:6b:29:33:97;
+	fixed-address 192.168.100.5;
+  }
+ host lab-2-13 {
+      	hardware ethernet e0:cb:4e:de:81:c0;
+	fixed-address 192.168.50.62;
+  }
+ host lab-2-14 {
+      	hardware ethernet 00:24:8c:0f:e8:9b;
+	fixed-address 192.168.50.63;
+  }
+ host lab-2-2 {
+      	hardware ethernet e0:cb:4e:de:9d:b6;
+	fixed-address 192.168.50.51;
+  }
+ host admin-gayatri {
+      	hardware ethernet 38:60:77:92:8b:47;
+	fixed-address 192.168.100.145;
+  }
+ host admin-vinod-ph {
+      	hardware ethernet 70:e0:27:12:ba:4a;
+	fixed-address 192.168.3.100;
+  }
+ host class-3-p108 {
+      	hardware ethernet 00:26:18:d1:e4:0e;
+	fixed-address 192.168.100.20;
+  }
+ host server-lab_web {
+      	hardware ethernet 52:54:00:2d:fe:05;
+	fixed-address 192.168.100.173;
+  }
+ host lab-3-11 {
+      	hardware ethernet 00:23:54:a3:03:fd;
+	fixed-address 192.168.50.109;
+  }
+ host class-4-p220 {
+      	hardware ethernet 00:26:18:d1:e4:99;
+	fixed-address 192.168.100.10;
+  }
+ host class-4-p222 {
+      	hardware ethernet e0:cb:4e:de:7f:a7;
+	fixed-address 192.168.100.55;
+  }
+ host class-kgnursery {
+      	hardware ethernet c8:60:00:72:b4:cd;
+	fixed-address 192.168.100.111;
+  }
+ host mgmt-anchita-ph {
+      	hardware ethernet 20:64:32:29:de:3c;
+	fixed-address 192.168.100.153;
+  }
+ host lab-2-37 {
+      	hardware ethernet e0:cb:4e:de:9d:29;
+	fixed-address 192.168.50.86;
+  }
+ host acad-event-temp9 {
+      	hardware ethernet 78:dd:08:c8:34:55;
+	fixed-address 192.168.2.78;
+  }
+ host acad-staff-2 {
+      	hardware ethernet b8:97:5a:30:fd:aa;
+	fixed-address 192.168.100.180;
+  }
+ host admin-harish-lt {
+      	hardware ethernet 00:1e:ec:aa:12:e9;
+	fixed-address 192.168.100.247;
+  }
+ host lab-3-43 {
+      	hardware ethernet 00:23:54:a2:c6:0c;
+	fixed-address 192.168.50.141;
+  }
+ host lab-3-4 {
+      	hardware ethernet 00:24:8c:05:1f:b4;
+	fixed-address 192.168.50.102;
+  }
+ host mgmt-neha-ph {
+      	hardware ethernet c8:97:9f:bc:c9:f4;
+	fixed-address 192.168.100.233;
+  }
+ host sachintest-tab {
+      	hardware ethernet 00:7c:0e:04:57:e3;
+	fixed-address 192.168.100.1;
+  }
+ host lab-1-23 {
+      	hardware ethernet 00:24:8c:0f:e8:85;
+	fixed-address 192.168.50.23;
+  }
+ host lab-2-48 {
+      	hardware ethernet e0:cb:4e:de:7e:04;
+	fixed-address 192.168.50.97;
+  }
+ host lab-2-4 {
+      	hardware ethernet e0:cb:4e:de:9d:e3;
+	fixed-address 192.168.50.53;
+  }
+ host acad-rama {
+      	hardware ethernet 00:19:d1:a1:a6:a0;
+	fixed-address 192.168.100.116;
+  }
+ host eshala-jyothi {
+      	hardware ethernet 00:26:18:29:2d:cd;
+	fixed-address 192.168.100.225;
+  }
+ host eshala-pramod {
+      	hardware ethernet 54:04:a6:ef:63:7f;
+	fixed-address 192.168.100.23;
+  }
+ host mgmt-aanasa-home-ph {
+      	hardware ethernet e8:4e:84:80:89:9c;
+	fixed-address 192.168.2.100;
+  }
+ host lab-1-9 {
+      	hardware ethernet e0:cb:4e:de:97:2d;
+	fixed-address 192.168.50.9;
+  }
+ host class-hist12 {
+      	hardware ethernet c8:60:00:72:b4:c1;
+	fixed-address 192.168.3.203;
+  }
+ host mgmt-anchita-lt-wired {
+      	hardware ethernet 50:b7:c3:7b:59:0a;
+	fixed-address 192.168.100.101;
+  }
+ host lab-1-6 {
+      	hardware ethernet 00:23:54:a3:04:12;
+	fixed-address 192.168.50.6;
+  }
+ host lab-3-31 {
+      	hardware ethernet e0:cb:4e:de:97:6f;
+	fixed-address 192.168.50.129;
+  }
+ host lab-3-7 {
+      	hardware ethernet 00:23:54:a4:c1:11;
+	fixed-address 192.168.50.105;
+  }
+ host DVR-Xreox-Room {
+      	hardware ethernet 8c:e7:48:24:60:37;
+	fixed-address 192.168.100.70;
+  }
+ host server-RFID-READER-1 {
+      	hardware ethernet 00:22:6F:BE:33:29;
+	fixed-address 192.168.100.187;
+  }
+ host lab-2-23 {
+      	hardware ethernet e0:cb:4e:de:8a:8b;
+	fixed-address 192.168.50.72;
+  }
+ host lab-2-26 {
+      	hardware ethernet e0:cb:4e:de:9d:1a;
+	fixed-address 192.168.50.75;
+  }
+ host lab-4-27 {
+      	hardware ethernet e0:cb:4e:e0:23:40;
+	fixed-address 192.168.50.173;
+  }
+ host acad-event-temp5 {
+      	hardware ethernet 40:f0:2f:e7:99:77;
+	fixed-address 192.168.2.74;
+  }
+ host arun-guest-lt1 {
+      	hardware ethernet 9c:2a:70:d5:6f:3d;
+	fixed-address 192.168.2.104;
+  }
+ host server-newwinserver {
+      	hardware ethernet 52:54:00:77:35:54;
+	fixed-address 192.168.2.61;
+  }
+ host lab-1-16 {
+      	hardware ethernet 00:24:8c:02:00:73;
+	fixed-address 192.168.50.16;
+  }
+ host lab-5-9 {
+      	hardware ethernet 7c:05:07:0d:76:56;
+	fixed-address 192.168.50.209;
+  }
+ host mgmt-anvit-lt-wired {
+      	hardware ethernet 64:31:50:6d:ea:20;
+	fixed-address 192.168.100.40;
+  }
+ host lab-2-31 {
+      	hardware ethernet e0:cb:4e:de:7c:82;
+	fixed-address 192.168.50.80;
+  }
+ host lab-2-34 {
+      	hardware ethernet e0:cb:4e:de:84:3d;
+	fixed-address 192.168.50.83;
+  }
+ host lab-3-15 {
+      	hardware ethernet 00:23:54:a4:bb:bd;
+	fixed-address 192.168.50.113;
+  }
+ host yogesh-ph1 {
+      	hardware ethernet 00:08:22:68:60:63;
+	fixed-address 192.168.2.111;
+  }
+ host yogesh-lpt{
+        hardware ethernet 38:59:F9:09:E8:8F;
+        fixed-address 192.168.10.68;
+  }
+
+ host acad-prog1 {
+      	hardware ethernet 5c:d9:98:20:30:86;
+	fixed-address 192.168.100.159;
+  }
+ host class-4-p226 {
+      	hardware ethernet e0:cb:4e:de:7b:54;
+	fixed-address 192.168.100.57;
+  }
+ host myeshala_tab59-wifi {
+      	hardware ethernet 00:99:0e:10:75:56;
+	fixed-address 192.168.2.59;
+  }
+ host server-dell-mysql {
+      	hardware ethernet 52:54:00:32:dc:ce;
+	fixed-address 192.168.100.62;
+  }
+ host lab-2-18 {
+      	hardware ethernet e0:cb:4e:de:97:1a;
+	fixed-address 192.168.50.67;
+  }
+ host admin-harish {
+      	hardware ethernet 14:da:e9:b2:6e:00;
+	fixed-address 192.168.100.243;
+  }
+ host mgmt-anvit-new-dev {
+      	hardware ethernet 00:19:05:00:36:b8;
+	fixed-address 192.168.5.21;
+  }
+ host newadmin-server {
+      	hardware ethernet 38:60:77:bd:f0:eb;
+	fixed-address 192.168.100.146;
+  }
+ host lab-2-8 {
+      	hardware ethernet e0:cb:4e:de:7d:88;
+	fixed-address 192.168.50.57;
+  }
+ host lab-4-22 {
+      	hardware ethernet b8:97:5a:31:01:64;
+	fixed-address 192.168.50.168;
+  }
+ host eshala-renderer {
+      	hardware ethernet 1c:6f:65:3e:df:aa;
+	fixed-address 192.168.100.33;
+  }
+ host mgmt-nikhil-ph-old {
+      	hardware ethernet 3c:07:71:a9:9c:ad;
+	fixed-address 192.168.100.234;
+  }
+ host lab-4-33 {
+      	hardware ethernet e0:cb:4e:e1:1c:5c;
+#	fixed-address 192.168.50.179;
+	fixed-address 192.168.10.2;
+  }
+ host lab-4-8 {
+      	hardware ethernet e0:cb:4e:de:7c:c9;
+	fixed-address 192.168.50.154;
+  }
+ host lab-5-22 {
+      	hardware ethernet 4c:72:b9:26:40:cd;
+	fixed-address 192.168.50.222;
+  }
+ host class-4-p208 {
+      	hardware ethernet e0:cb:4e:e0:23:69;
+	fixed-address 192.168.100.4;
+  }
+ host mgmt-arpita-w {
+      	hardware ethernet 2c:27:d7:b4:8f:a9;
+	fixed-address 192.168.100.51;
+  }
+ host lab-1-29 {
+      	hardware ethernet 00:23:54:2a:d9:4d;
+	fixed-address 192.168.50.29;
+  }
+ host lab-4-43 {
+      	hardware ethernet 48:5b:39:19:02:36;
+	fixed-address 192.168.50.189;
+  }
+ host lab-5-21 {
+      	hardware ethernet 4c:72:b9:26:3e:fc;
+	fixed-address 192.168.50.221;
+  }
+ host acad-baban {
+      	hardware ethernet 00:01:2e:0b:e8:f0;
+	fixed-address 192.168.100.209;
+  }
+ host eshala-khurshid {
+      	hardware ethernet 00:1c:c0:69:bb:30;
+	fixed-address 192.168.100.215;
+  }
+ host server-chef {
+      	hardware ethernet 52:54:00:fc:09:77;
+	fixed-address 192.168.100.115;
+  }
+ host wifi-mnk5-office-wired {
+      	hardware ethernet c8:d3:a3:4a:c4:1f;
+	fixed-address 192.168.100.191;
+  }
+ host lab-4-39 {
+      	hardware ethernet e0:cb:4e:de:80:1c;
+	fixed-address 192.168.50.185;
+  }
+ host acad-event-temp {
+      	hardware ethernet 00:1d:7e:6d:28:77;
+	fixed-address 192.168.2.68;
+  }
+ host admin-anil {
+      	hardware ethernet 38:60:77:9c:da:07;
+	fixed-address 192.168.100.138;
+  }
+ host mn5-c {
+      	hardware ethernet 00:26:5a:87:4f:fc;
+	fixed-address 192.168.100.231;
+  }
+ host lab-2-21 {
+      	hardware ethernet e0:cb:4e:de:9d:e0;
+	fixed-address 192.168.50.70;
+  }
+ host lab-4-46 {
+      	hardware ethernet e0:cb:4e:de:8a:79;
+	fixed-address 192.168.50.192;
+  }
+ host mgmt-anvit-lt1-wired {
+      	hardware ethernet 50:b7:c3:7b:59:f9;
+	fixed-address 192.168.100.65;
+  }
+ host myeshala_tab57-wifi {
+      	hardware ethernet 00:76:0e:04:3f:d5;
+	fixed-address 192.168.2.57;
+  }
+ host lab-2-9 {
+      	hardware ethernet e0:cb:4e:de:93:21;
+	fixed-address 192.168.50.58;
+  }
+ host lab-4-35 {
+      	hardware ethernet e0:cb:4e:de:97:9a;
+	fixed-address 192.168.50.181;
+  }
+ host lab-4-40 {
+      	hardware ethernet e0:cb:4e:de:97:08;
+	fixed-address 192.168.50.186;
+  }
+ host admin-modak {
+      	hardware ethernet 38:60:77:0d:45:58;
+	fixed-address 192.168.100.201;
+  }
+ host lab-2-25 {
+      	hardware ethernet e0:cb:4e:de:7d:0d;
+	fixed-address 192.168.50.74;
+  }
+ host lab-3-10 {
+      	hardware ethernet 00:24:8c:05:20:66;
+	fixed-address 192.168.50.108;
+  }
+ host lab-3-41 {
+      	hardware ethernet 00:23:54:d5:e2:74;
+	fixed-address 192.168.50.139;
+  }
+ host lab-4-23 {
+      	hardware ethernet b8:97:5a:25:fa:57;
+	fixed-address 192.168.50.169;
+  }
+ host class-12-sci {
+      	hardware ethernet ec:a8:6b:29:38:2a;
+	fixed-address 192.168.100.69;
+  }
+ host DVR-ground {
+      	hardware ethernet 8c:e7:48:11:cd:d9;
+	fixed-address 192.168.100.131;
+  }
+ host lab-1-22 {
+      	hardware ethernet 00:24:8c:02:00:59;
+	fixed-address 192.168.50.22;
+  }
+ host lab-3-22 {
+      	hardware ethernet 00:23:54:d5:ef:fb;
+	fixed-address 192.168.50.120;
+  }
+ host lab-4-4 {
+      	hardware ethernet e0:cb:4e:de:96:b4;
+	fixed-address 192.168.50.150;
+  }
+ host acad-event-temp7 {
+      	hardware ethernet 20:7c:8f:13:26:7b;
+	fixed-address 192.168.2.76;
+  }
+ host class-4-p207 {
+      	hardware ethernet 74:27:ea:06:5a:44;
+	fixed-address 192.168.100.6;
+  }
+ host server-dell-4 {
+      	hardware ethernet bc:30:5b:f8:87:27;
+	fixed-address 192.168.100.106;
+  }
+ host lab-1-31 {
+      	hardware ethernet 00:23:54:a2:c6:83;
+	fixed-address 192.168.50.31;
+  }
+ host lab-2-10 {
+      	hardware ethernet e0:cb:4e:de:97:84;
+	fixed-address 192.168.50.59;
+  }
+ host admin-aditi {
+      	hardware ethernet 7c:05:07:0d:75:76;
+	fixed-address 192.168.100.58;
+  }
+ host admin-kanchan {
+      	hardware ethernet b8:97:5a:31:02:e4;
+	fixed-address 192.168.100.135;
+  }
+ host lab-2-35 {
+      	hardware ethernet e0:cb:4e:9d:bf:b1;
+	fixed-address 192.168.50.84;
+  }
+ host lab-3-35 {
+      	hardware ethernet e0:cb:4e:de:7c:84;
+	fixed-address 192.168.50.133;
+  }
+ host lab-5-8 {
+      	hardware ethernet 7c:05:07:0d:75:4a;
+	fixed-address 192.168.50.208;
+  }
+ host eshala-ashwini {
+      	hardware ethernet 00:21:85:15:15:6a;
+	fixed-address 192.168.100.236;
+  }
+ host mgmt-3 {
+      	hardware ethernet 20:02:af:36:d6:69;
+	fixed-address 192.168.100.99;
+  }
+ host lab-1-17 {
+      	hardware ethernet 00:24:8c:05:1f:b8;
+	fixed-address 192.168.50.17;
+  }
+ host lab-2-43 {
+      	hardware ethernet e0:cb:4e:de:97:1c;
+	fixed-address 192.168.50.92;
+  }
+ host lab-5-3 {
+      	hardware ethernet 7c:05:07:0d:75:6f;
+	fixed-address 192.168.50.203;
+  }
+ host class-3-p121 {
+      	hardware ethernet ec:a8:6b:29:36:39;
+	fixed-address 192.168.100.49;
+  }
+ host eshala-china-tab-3 {
+      	hardware ethernet 00:8c:0e:00:8d:cb;
+	fixed-address 192.168.100.172;
+  }
+ host mgmt-karkare-home1 {
+      	hardware ethernet 20:68:9d:1a:3b:97;
+	fixed-address 192.168.100.168;
+  }
+ host mgmt-neha-lt-wired {
+      	hardware ethernet 6c:3b:e5:91:af:a9;
+	fixed-address 192.168.100.155;
+  }
+ host lab-3-9 {
+      	hardware ethernet 00:26:18:40:f1:52;
+	fixed-address 192.168.50.107;
+  }
+ host Access-pt-new {
+      	hardware ethernet 78:54:2e:81:30:f1;
+	fixed-address 192.168.100.93;
+  }
+ host class-3-p106 {
+      	hardware ethernet ec:a8:6b:29:35:d3;
+	fixed-address 192.168.100.16;
+  }
+ host eshala-suraj {
+      	hardware ethernet 14:da:e9:b5:d6:6b;
+	fixed-address 192.168.100.147;
+  }
+ host lab-2-5 {
+      	hardware ethernet e0:cb:4e:de:7c:c6;
+	fixed-address 192.168.50.54;
+  }
+ host lab-5-2 {
+      	hardware ethernet 7c:05:07:0d:76:04;
+	fixed-address 192.168.50.202;
+  }
+ host class-3-p132 {
+      	hardware ethernet 00:26:18:d1:e4:9e;
+	fixed-address 192.168.100.18;
+  }
+ host class-kgsr {
+      	hardware ethernet c8:60:00:72:b4:dc;
+	fixed-address 192.168.100.110;
+  }
+ host lab-1-3 {
+      	hardware ethernet 00:24:8c:05:1f:c0;
+	fixed-address 192.168.50.3;
+  }
+ host lab-4-18 {
+      	hardware ethernet b8:97:5a:25:fa:de;
+	fixed-address 192.168.50.164;
+  }
+ host Bharat-Mobile {
+      	hardware ethernet 10:A5:D0:97:81:A3; 
+	fixed-address 192.168.100.249;
+  }
+ host admin-smit {
+      	hardware ethernet 00:27:0e:05:4f:d3;
+	fixed-address 192.168.100.228;
+  }
+ host eshala-1 {
+      	hardware ethernet 14:da:e9:ed:8d:df;
+	fixed-address 192.168.100.141;
+  }
+ host mgmt-2 {
+      	hardware ethernet 5c:0f:5b:5b:50:33;
+	fixed-address 192.168.100.98;
+  }
+ host lab-4-5 {
+      	hardware ethernet e0:cb:4e:de:7c:83;
+	fixed-address 192.168.50.151;
+  }
+ host lab-5-7 {
+      	hardware ethernet 7c:05:07:0d:75:a2;
+	fixed-address 192.168.50.207;
+  }
+ host EPBX {
+      	hardware ethernet 00:60:b9:dd:a9:8c;
+	fixed-address 192.168.100.137;
+  }
+ host eshala-abhinavs {
+      	hardware ethernet 00:19:d1:ac:ac:9d;
+	fixed-address 192.168.100.203;
+  }
+ host lab-1-40 {
+      	hardware ethernet 00:23:54:a3:03:f6;
+	fixed-address 192.168.50.40;
+  }
+ host lab-1-44 {
+      	hardware ethernet 00:23:54:a3:04:10;
+	fixed-address 192.168.50.44;
+  }
+ host lab-2-6 {
+      	hardware ethernet e0:cb:4e:de:96:b1;
+	fixed-address 192.168.50.55;
+  }
+ host acad-geeta {
+      	hardware ethernet 00:23:54:28:9e:8f;
+	fixed-address 192.168.100.222;
+  }
+ host class-kg-sr {
+      	hardware ethernet 00:26:18:d1:e3:e4;
+	fixed-address 192.168.100.112;
+  }
+ host mgmt-neha-lt-wl {
+      	hardware ethernet bc:85:56:ed:49:9d;
+	fixed-address 192.168.100.189;
+  }
+ host mgmt-nikhil-ezcast {
+      	hardware ethernet 54:e4:bd:9e:5d:e0;
+	fixed-address 192.168.100.50;
+  }
+ host lab-4-25 {
+      	hardware ethernet e0:cb:4e:e0:23:c0;
+	fixed-address 192.168.50.171;
+  }
+ host class-2-m13 {
+      	hardware ethernet ec:a8:6b:29:37:13;
+	fixed-address 192.168.100.15;
+  }
+ host lab-3-24 {
+      	hardware ethernet 00:24:8c:0f:e6:f6;
+	fixed-address 192.168.50.122;
+  }
+ host lab-3-32 {
+      	hardware ethernet e0:cb:4e:de:8a:89;
+	fixed-address 192.168.50.130;
+  }
+ host lab-3-33 {
+      	hardware ethernet e0:cb:4e:de:8a:6c;
+	fixed-address 192.168.50.131;
+  }
+ host lab-4-37 {
+      	hardware ethernet e0:cb:4e:de:7d:0c;
+	fixed-address 192.168.50.183;
+  }
+ host DVR-home {
+      	hardware ethernet 00:40:48:72:d2:b3;
+	fixed-address 192.168.100.132;
+  }
+ host eshala_student_activation_pc1-wifi {
+      	hardware ethernet 00:6b:0e:03:35:4d;
+	fixed-address 192.168.1.66;
+  }
+ host mgmt-anchita-lt-wl {
+      	hardware ethernet c8:f7:33:0f:a3:61;
+	fixed-address 192.168.100.102;
+  }
+ host lab-3-36 {
+      	hardware ethernet e0:cb:4e:e1:1c:4b;
+	fixed-address 192.168.50.134;
+  }
+ host lab-4-29 {
+      	hardware ethernet e0:cb:4e:de:97:78;
+	fixed-address 192.168.50.175;
+  }
+ host Aanasa-Akeen-phone {
+      	hardware ethernet 88:32:9b:a3:53:34;
+	fixed-address 192.168.100.200;
+  }
+ host class-mar4 {
+      	hardware ethernet e0:cb:4e:e0:23:73;
+	fixed-address 192.168.3.201;
+  }
+ host lab-1-25 {
+      	hardware ethernet 00:23:54:d5:ef:d8;
+	fixed-address 192.168.50.25;
+  }
+ host lab-4-42 {
+      	hardware ethernet e0:cb:4e:de:8a:8c;
+	fixed-address 192.168.50.188;
+  }
+ host lab-5-13 {
+      	hardware ethernet 7c:05:07:0d:76:50;
+	fixed-address 192.168.50.213;
+  }
+ host admin-Sachin-tab {
+      	hardware ethernet 00:ee:72:46:47:41;
+	fixed-address 192.168.100.163;
+  }
+ host eshala-pratyancha {
+      	hardware ethernet 14:da:e9:b5:d6:b2;
+	fixed-address 192.168.100.152;
+  }
+ host lab-2-12 {
+      	hardware ethernet e0:cb:4e:de:81:d8;
+	fixed-address 192.168.50.61;
+  }
+ host lab-2-24 {
+      	hardware ethernet e0:cb:4e:de:7f:ab;
+	fixed-address 192.168.50.73;
+  }
+ host lab-4-15 {
+      	hardware ethernet b8:97:5a:25:fb:9d;
+	fixed-address 192.168.50.161;
+  }
+ host class-4-p227 {
+      	hardware ethernet e0:cb:4e:e0:23:b6;
+	fixed-address 192.168.100.9;
+  }
+ host myeshala_tab58-wifi {
+      	hardware ethernet 00:8b:0e:05:4e:d6;
+	fixed-address 192.168.2.58;
+  }
+ host lab-1-11 {
+      	hardware ethernet 00:24:8c:02:00:32;
+	fixed-address 192.168.50.11;
+  }
+ host lab-1-48 {
+      	hardware ethernet 00:24:8c:02:00:9a;
+	fixed-address 192.168.50.48;
+  }
+ host lab-3-29 {
+      	hardware ethernet e0:cb:4e:de:89:9b;
+	fixed-address 192.168.50.127;
+  }
+ host acad-event-temp3 {
+      	hardware ethernet 28:c6:8e:56:7e:46;
+	fixed-address 192.168.2.72;
+  }
+ host admin-harish-lt-wl {
+      	hardware ethernet 00:21:00:67:14:f9;
+	fixed-address 192.168.100.166;
+  }
+ host mgmt-nikhil-ph {
+      	hardware ethernet 34:aa:8b:e8:bc:1c;
+	fixed-address 192.168.100.91;
+  }
+ host projector-1 {
+      	hardware ethernet 00:24:8c:ac:3e:6f;
+	fixed-address 192.168.100.217;
+  }
+ host lab-3-12 {
+      	hardware ethernet 00:23:54:d5:e9:96;
+	fixed-address 192.168.50.110;
+  }
+ host class-3-p125 {
+      	hardware ethernet c8:60:00:72:af:7a;
+	fixed-address 192.168.100.48;
+  }
+ host mgmt-nikhil-lt-wl {
+      	hardware ethernet b8:76:3f:42:04:cd;
+	fixed-address 192.168.100.109;
+  }
+ host wifi-mk5-std {
+      	hardware ethernet 00:1c:f0:b1:ac:ad;
+	fixed-address 192.168.100.244;
+  }
+ host lab-3-28 {
+      	hardware ethernet 00:26:18:d1:e4:b8;
+	fixed-address 192.168.50.126;
+  }
+ host lab-5-17 {
+      	hardware ethernet 7c:05:07:0d:76:4d;
+	fixed-address 192.168.50.217;
+  }
+ host camera {
+      	hardware ethernet 00:14:a5:f4:74:2d;
+	fixed-address 192.168.100.210;
+  }
+ host class-kg-nur {
+      	hardware ethernet e0:cb:4e:e0:23:c8;
+	fixed-address 192.168.100.114;
+  }
+ host lab-1-32 {
+      	hardware ethernet 00:24:8c:01:ff:44;
+	fixed-address 192.168.50.32;
+  }
+ host lab-3-39 {
+      	hardware ethernet e0:cb:4e:de:9d:e6;
+	fixed-address 192.168.50.137;
+  }
+ host lab-5-18 {
+      	hardware ethernet 7c:05:07:0d:76:4e;
+	fixed-address 192.168.50.218;
+  }
+ host acad-staff-4 {
+      	hardware ethernet b8:97:5a:31:00:24;
+	fixed-address 192.168.100.26;
+  }
+ host admin-lt-3-wired {
+      	hardware ethernet 00:1e:ec:1c:5d:28;
+	fixed-address 192.168.100.241;
+  }
+ host server-win2012 {
+      	hardware ethernet 52:54:00:c4:01:ed;
+	fixed-address 192.168.2.50;
+  }
+ host lab-4-10 {
+      	hardware ethernet 00:26:18:d1:e4:9f;
+	fixed-address 192.168.50.156;
+  }
+ host lab-5-19 {
+      	hardware ethernet 7c:05:07:0d:75:5e;
+	fixed-address 192.168.50.219;
+  }
+ host admin-lt-1-wired {
+      	hardware ethernet 00:26:9e:35:6c:23;
+	fixed-address 192.168.100.238;
+  }
+ host admin-reception {
+      	hardware ethernet 00:19:d1:19:e0:09;
+	fixed-address 192.168.100.216;
+  }
+ host admin-web {
+      	hardware ethernet 52:54:00:5f:24:85;
+	fixed-address 192.168.10.101;
+  }
+ host mgmt-arpita-lt-wl {
+      	hardware ethernet 84:4b:f5:3a:2c:d7;
+	fixed-address 192.168.100.157;
+  }
+ host lab-1-46 {
+      	hardware ethernet 00:23:54:d5:e3:76;
+	fixed-address 192.168.50.46;
+  }
+ host admin-kanchan-2 {
+      	hardware ethernet e0:69:95:88:53:7d;
+	fixed-address 192.168.100.67;
+  }
+ host admin-mysql {
+      	hardware ethernet 52:54:00:4e:41:2;
+	fixed-address 192.168.10.100;
+  }
+ host ip-camera {
+      	hardware ethernet 00:a8:f6:00:7f:c9;
+	fixed-address 192.168.100.56;
+  }
+ host lab-1-4 {
+      	hardware ethernet 00:24:8c:0f:e8:ae;
+	fixed-address 192.168.50.4;
+  }
+ host lab-5-14 {
+      	hardware ethernet 4c:72:b9:26:40:eb;
+	fixed-address 192.168.50.214;
+  }
+ host admin-prachi {
+      	hardware ethernet b8:97:5a:30:ff:07;
+	fixed-address 192.168.100.2;
+  }
+ host server-fog {
+      	hardware ethernet 52:54:00:95:08:1f;
+	fixed-address 192.168.100.150;
+  }
+ host lab-3-17 {
+      	hardware ethernet 00:23:54:d5:e9:a2;
+	fixed-address 192.168.50.115;
+  }
+ host lab-4-13 {
+      	hardware ethernet 00:23:54:d5:ea:a7;
+	fixed-address 192.168.50.159;
+  }
+ host lab-4-2 {
+      	hardware ethernet e0:cb:4e:de:89:99;
+#	fixed-address 192.168.10.3;
+	fixed-address 192.168.50.148;
+  }
+ host arun-guest-lt2 {
+      	hardware ethernet e0:db:55:a2:c9:1e;
+	fixed-address 192.168.2.106;
+  }
+ host class-2-langarts {
+      	hardware ethernet e0:cb:4e:e0:21:f0;
+	fixed-address 192.168.100.11;
+  }
+ host class-4-p221 {
+      	hardware ethernet e0:cb:4e:de:7d:09;
+	fixed-address 192.168.100.3;
+  }
+ host lab-1-28 {
+      	hardware ethernet 00:24:8c:05:1f:b6;
+	fixed-address 192.168.50.28;
+  }
+ host lab-4-21 {
+      	hardware ethernet b8:97:5a:25:fa:d3;
+	fixed-address 192.168.50.167;
+  }
+ host admin-deshpande {
+      	hardware ethernet b8:97:5a:60:8a:dd;
+	fixed-address 192.168.5.50;
+  }
+ host DVR-reception {
+      	hardware ethernet 00:40:48:30:24:01;
+	fixed-address 192.168.100.162;
+  }
+ host mgmt-dr-karkare-phone {
+      	hardware ethernet 68:ed:43:db:8b:4d;
+	fixed-address 192.168.100.174;
+  }
+ host lab-2-45 {
+      	hardware ethernet e0:cb:4e:de:89:99;
+	fixed-address 192.168.50.94;
+  }
+ host lab-5-11 {
+      	hardware ethernet 7c:05:07:0d:76:41;
+	fixed-address 192.168.50.211;
+  }
+ host acad-radhika {
+      	hardware ethernet 14:da:e9:b2:6c:73;
+	fixed-address 192.168.100.148;
+  }
+ host acad-teachers {
+      	hardware ethernet 00:19:d1:a1:aa:bb;
+	fixed-address 192.168.100.206;
+  }
+ host admin-lt-1-wl {
+      	hardware ethernet 00:26:5e:68:5e:d5;
+	fixed-address 192.168.100.239;
+  }
+ host admin-lt-2-wl {
+      	hardware ethernet 00:26:5E:79:EC:63;
+	fixed-address 192.168.100.226;
+  }
+ host lab-4-45 {
+      	hardware ethernet e0:cb:4e:de:87:c4;
+	fixed-address 192.168.50.191;
+  }
+ host acad-event-temp4 {
+      	hardware ethernet b4:74:9f:87:a7:3f;
+	fixed-address 192.168.2.73;
+  }
+ host acad-staff-3 {
+      	hardware ethernet b8:97:5a:31:02:e6;
+	fixed-address 192.168.100.7;
+  }
+ host DVR-storeroom {
+      	hardware ethernet 00:40:48:72:d2:98;
+	fixed-address 192.168.100.136;
+  }
+ host mgmt-anvit-htc {
+      	hardware ethernet 38:e7:d8:7b:f9:d0;
+	fixed-address 192.168.100.25;
+  }
+ host mgmt-neha-mob {
+      	hardware ethernet A0:F4:50:7F:46:22;
+	fixed-address 192.168.100.175;
+  }
+ host lab-1-42 {
+      	hardware ethernet 00:23:54:d5:ea:60;
+	fixed-address 192.168.50.42;
+  }
+ host lab-2-38 {
+      	hardware ethernet e0:cb:4e:de:97:12;
+	fixed-address 192.168.50.87;
+  }
+ host lab-2-7 {
+      	hardware ethernet e0:cb:4e:de:81:a8;
+	fixed-address 192.168.50.56;
+  }
+ host lab-3-46 {
+      	hardware ethernet 00:23:54:a4:c1:41;
+	fixed-address 192.168.50.144;
+  }
+ host lab-4-1 {
+      	hardware ethernet e0:cb:4e:de:8a:8f;
+	fixed-address 192.168.50.147;
+  }
+ host eshala-apurva {
+      	hardware ethernet 00:26:18:29:28:30;
+	fixed-address 192.168.100.229;
+  }
+ host lab-1-19 {
+      	hardware ethernet 00:23:54:a3:04:0f;
+	fixed-address 192.168.50.19;
+  }
+ host lab-1-45 {
+      	hardware ethernet 00:23:54:a4:c1:72;
+	fixed-address 192.168.50.45;
+  }
+ host lab-3-30 {
+      	hardware ethernet e0:cb:4e:de:81:2d;
+	fixed-address 192.168.50.128;
+  }
+ host lab-4-11 {
+      	hardware ethernet 14:da:e9:b2:6c:72;
+	fixed-address 192.168.50.157;
+  }
+ host acad-library {
+      	hardware ethernet e0:cb:4e:e1:1c:38;
+	fixed-address 192.168.10.63;
+  }
+ host class-2-m8 {
+      	hardware ethernet e0:cb:4e:e0:23:c5;
+	fixed-address 192.168.100.12;
+  }
+ host class-3-p122 {
+      	hardware ethernet e0:cb:4e:e0:23:b0;
+	fixed-address 192.168.100.22;
+  }
+ host lab-3-25 {
+      	hardware ethernet e0:cb:4e:de:80:1f;
+	fixed-address 192.168.50.123;
+  }
+ host lab-4-3 {
+      	hardware ethernet e0:cb:4e:de:90:90;
+	fixed-address 192.168.50.149;
+  }
+ host mgmt-arpita-samsung-tab {
+      	hardware ethernet 5c:f8:a1:52:87:7e;
+	fixed-address 192.168.100.242;
+  }
+ host hathway {
+      	hardware ethernet e0:3f:49:7c:2c:b5;
+	fixed-address 192.168.50.196;
+  }
+ host lab-1-10 {
+      	hardware ethernet 00:24:8c:05:20:61;
+	fixed-address 192.168.50.10;
+  }
+ host lab-1-33 {
+      	hardware ethernet 00:23:54:d5:e9:52;
+	fixed-address 192.168.50.33;
+  }
+ host lab-2-22 {
+      	hardware ethernet e0:cb:4e:de:9d:19;
+	fixed-address 192.168.50.71;
+  }
+ host acad-staff-1 {
+      	hardware ethernet b8:97:5a:30:fa:54;
+	fixed-address 192.168.100.45;
+  }
+ host Access-pt-Mainbuilding {
+      	hardware ethernet c8:d3:a3:dc:16:e4;
+	fixed-address 192.168.100.182;
+  }
+ host mgmt-home-ipad1 {
+      	hardware ethernet 8C:FA:BA:F0:87:D9;
+	fixed-address 192.168.100.214;
+  }
+ host lab-1-2 {
+      	hardware ethernet 00:23:54:d5:ea:a8;
+	fixed-address 192.168.50.2;
+  }
+ host lab-1-36 {
+      	hardware ethernet 00:24:8c:05:1f:bb;
+	fixed-address 192.168.50.36;
+  }
+ host lab-1-37 {
+      	hardware ethernet 00:24:8c:05:1f:b7;
+	fixed-address 192.168.50.37;
+  }
+ host lab-2-29 {
+      	hardware ethernet e0:cb:4e:de:7d:bd;
+	fixed-address 192.168.50.78;
+  }
+ host lab-2-32 {
+      	hardware ethernet e0:cb:4e:de:97:09;
+	fixed-address 192.168.50.81;
+  }
+ host lab-3-6 {
+      	hardware ethernet 00:23:54:d5:ef:d7;
+	fixed-address 192.168.50.104;
+  }
+ host lab-4-17 {
+      	hardware ethernet b8:97:5a:30:ff:74;
+	fixed-address 192.168.50.163;
+  }
+ host admin-arun-sir-ph {
+      	hardware ethernet 14:d6:4d:48:15:74;
+	fixed-address 192.168.2.80;
+  }
+ host admin-vinod {
+      	hardware ethernet 38:60:77:7b:fa:e0;
+	fixed-address 192.168.100.212;
+  }
+ host server-mgmt-storage {
+      	hardware ethernet 00:d0:b8:1d:be:a7;
+	fixed-address 192.168.100.188;
+  }
+ host wifi-office-1 {
+      	hardware ethernet 78:54:2e:f2:e9:76;
+	fixed-address 192.168.100.119;
+  }
+ host lab-4-28 {
+      	hardware ethernet e0:cb:4e:de:90:46;
+	fixed-address 192.168.50.174;
+  }
+ host acad-event-temp8 {
+      	hardware ethernet 68:5d:43:bd:03:99;
+	fixed-address 192.168.2.77;
+  }
+ host class-sci11 {
+      	hardware ethernet 38:60:77:fc:15:df;
+	fixed-address 192.168.100.161;
+  }
+ host mgmt-kedar-lt-wifi {
+      	hardware ethernet 00:17:c4:95:a8:26;
+	fixed-address 192.168.100.97;
+  }
+ host server-win2k12 {
+      	hardware ethernet 52:54:00:ee:1b:d7;
+	fixed-address 192.168.100.44;
+  }
+ host lab-1-21 {
+      	hardware ethernet 00:23:54:a4:c1:95;
+	fixed-address 192.168.50.21;
+  }
+ host class-3-p107 {
+      	hardware ethernet e0:cb:4e:de:7b:34;
+	fixed-address 192.168.100.19;
+  }
+ host home-china-tablet {
+      	hardware ethernet 00:79:0e:04:30:8a;
+	fixed-address 192.168.2.62;
+  }
+ host server-thumb {
+      	hardware ethernet 52:54:00:30:79:51;
+	fixed-address 192.168.100.184;
+  }
+ host wifi-sirhome {
+      	hardware ethernet bc:f6:a5:c2:85:18;
+	fixed-address 192.168.100.143;
+  }
+ host lab-5-12 {
+      	hardware ethernet 7c:05:07:0d:75:75;
+	fixed-address 192.168.50.212;
+  }
+ host eshala-2 {
+      	hardware ethernet e0:cb:4e:de:7d:85;
+	fixed-address 192.168.100.122;
+  }
+ host mgmt-anvit-samsung {
+      	hardware ethernet 60:21:C0:BA:FC:50;
+	fixed-address 192.168.100.94;
+  }
+ host lab-1-39 {
+      	hardware ethernet 00:24:8c:05:18:15;
+	fixed-address 192.168.50.39;
+  }
+ host lab-1-5 {
+      	hardware ethernet 00:23:54:d5:e3:95;
+	fixed-address 192.168.50.5;
+  }
+ host lab-5-15 {
+      	hardware ethernet 7c:05:07:0d:75:72;
+	fixed-address 192.168.50.215;
+  }
+ host acad-prog2 {
+      	hardware ethernet 5c:d9:98:20:30:87;
+	fixed-address 192.168.100.160;
+  }
+ host server-new-storage {
+      	hardware ethernet bc:ae:c5:e0:1b:f4;
+	fixed-address 192.168.100.96;
+  }
+ host lab-1-18 {
+      	hardware ethernet 00:23:54:a2:c6:9c;
+	fixed-address 192.168.50.18;
+  }
+ host lab-3-14 {
+      	hardware ethernet 00:23:54:a2:c6:16;
+	fixed-address 192.168.50.112;
+  }
+ host lab-3-40 {
+      	hardware ethernet e0:cb:4e:de:97:27;
+	fixed-address 192.168.50.138;
+  }
+ host server-thumb-3 {
+      	hardware ethernet 00:17:61:10:81:34;
+	fixed-address 192.168.100.183;
+  }
+ host lab-2-1 {
+      	hardware ethernet e0:cb:4e:de:99:56;
+	fixed-address 192.168.50.50;
+  }
+ host lab-2-36 {
+      	hardware ethernet e0:cb:4e:de:94:79;
+	fixed-address 192.168.50.85;
+  }
+ host lab-3-5 {
+      	hardware ethernet 00:24:8c:02:00:5f;
+	fixed-address 192.168.50.103;
+  }
+ host lab-4-30 {
+      	hardware ethernet e0:cb:4e:de:96:dd;
+	fixed-address 192.168.50.176;
+  }
+ host admin-solution {
+      	hardware ethernet 90:48:9a:0b:7a:4d;
+	fixed-address 192.168.100.195;
+  }
+ host eshala-varsham {
+      	hardware ethernet 00:1f:c6:f4:53:16;
+	fixed-address 192.168.100.221;
+  }
+ host mgmt-tab-camera {
+      	hardware ethernet 00:66:0e:01:9a:03;
+	fixed-address 192.168.4.11;
+  }
+ host lab-3-20 {
+      	hardware ethernet 00:23:54:d5:e9:b7;
+	fixed-address 192.168.50.118;
+  }
+ host lab-4-41 {
+      	hardware ethernet e0:cb:4e:de:97:ad;
+	fixed-address 192.168.50.187;
+  }
+ host class-kg-jr {
+      	hardware ethernet 00:26:18:d1:e4:80;
+	fixed-address 192.168.100.113;
+  }
+ host eshala-vishala-ph {
+      	hardware ethernet 18:dc:56:f0:33:60;
+	fixed-address 192.168.100.186;
+  }
+ host mgmt-ipad {
+      	hardware ethernet d8:a2:5e:23:89:b3;
+	fixed-address 192.168.100.24;
+  }
+ host lab-1-1 {
+      	hardware ethernet 00:23:54:a2:c6:1a;
+	fixed-address 192.168.50.1;
+  }
+ host lab-4-38 {
+      	hardware ethernet e0:cb:4e:de:9d:10;
+	fixed-address 192.168.50.184;
+  }
+ host mgmt-neha-wl {
+      	hardware ethernet 00:22:69:6c:49:d0;
+	fixed-address 192.168.100.207;
+  }
+ host renderer-server {
+      	hardware ethernet E0:69:95:12:0D:50;#52:54:00:e6:45:eb;
+	fixed-address 192.168.100.92;
+  }
+ host lab-2-28 {
+      	hardware ethernet e0:cb:4e:de:9b:f8;
+	fixed-address 192.168.50.77;
+  }
+ host lab-2-33 {
+      	hardware ethernet e0:cb:4e:de:89:de;
+	fixed-address 192.168.50.82;
+  }
+ host lab-3-13 {
+      	hardware ethernet 00:23:54:d5:e3:bf;
+	fixed-address 192.168.50.111;
+  }
+ host acad-event-temp2 {
+      	hardware ethernet f4:b7:e2:f5:3e:d7;
+	fixed-address 192.168.2.71;
+  }
+ host acad-ramdas {
+      	hardware ethernet 00:1c:c0:12:70:2d;
+	fixed-address 192.168.100.213;
+  }
+ host eshala-abhinav {
+      	hardware ethernet 00:24:8c:d8:ce:7a;
+	fixed-address 192.168.100.224;
+  }
+ host mgmt-nikhil-lt-wired {
+      	hardware ethernet 6c:3b:e5:8a:36:90;
+	fixed-address 192.168.100.108;
+  }
+ host lab-2-30 {
+      	hardware ethernet e0:cb:4e:de:9d:24;
+	fixed-address 192.168.50.79;
+  }
+ host eshala-arpita {
+      	hardware ethernet 14:da:e9:eb:69:50;
+	fixed-address 192.168.100.127;
+  }
+ host eshala-vishal {
+      	hardware ethernet 14:da:e9:b5:df:f3;
+	fixed-address 192.168.100.121;
+  }
+ host managed-switch {
+      	hardware ethernet 78:54:2e:19:8c:1e;
+	fixed-address 192.168.100.1;
+  }
+ host lab-3-42 {
+      	hardware ethernet 00:23:54:a3:04:1a;
+	fixed-address 192.168.50.140;
+  }
+ host lab-4-24 {
+      	hardware ethernet b8:97:5a:31:03:20;
+	fixed-address 192.168.50.170;
+  }
+ host admin-dns-dhcp {
+      	hardware ethernet 52:54:00:15:25:8e;
+	fixed-address 192.168.100.167;
+  }
+ host DVR-canteen {
+      	hardware ethernet 00:40:48:68:6e:26;
+	fixed-address 192.168.100.133;
+  }
+ host eshala-reshma {
+      	hardware ethernet 00:27:0e:26:bc:be;
+	fixed-address 192.168.100.240;
+  }
+ host new_thin_computing {
+      	hardware ethernet d0:27:88:ca:1b:be;
+	fixed-address 192.168.100.128;
+  }
+ host lab-4-26 {
+      	hardware ethernet e0:cb:4e:e1:1c:8b;
+	fixed-address 192.168.50.172;
+  }
+ host acad-sports {
+      	hardware ethernet b8:97:5a:30:ff:61;
+	fixed-address 192.168.100.177;
+  }
+ host mgmt-anvit-lt1-wl {
+      	hardware ethernet c8:f7:33:12:77:71;
+	fixed-address 192.168.100.64;
+  }
+ host printer {
+      	hardware ethernet 00:00:74:80:83:8c;
+	fixed-address 192.168.100.205;
+  }
+ host lab-2-47 {
+      	hardware ethernet e0:cb:4e:de:97:26;
+	fixed-address 192.168.50.96;
+  }
+ host lab-2-49 {
+      	hardware ethernet e0:cb:4e:de:97:a2;
+	fixed-address 192.168.50.98;
+  }
+ host eshala-tejpal {
+      	hardware ethernet 14:da:e9:9f:5d:c4;
+	fixed-address 192.168.100.190;
+  }
+ host server-dell-3 {
+      	hardware ethernet bc:30:5b:f8:87:26;
+	fixed-address 192.168.100.105;
+  }
+ host lab-1-41 {
+      	hardware ethernet 00:23:54:d5:f0:11;
+	fixed-address 192.168.50.41;
+  }
+ host lab-3-19 {
+      	hardware ethernet 00:23:54:d5:e3:85;
+	fixed-address 192.168.50.117;
+  }
+ host lab-5-20 {
+      	hardware ethernet 7c:05:07:0d:75:17;
+	fixed-address 192.168.50.220;
+  }
+ host acad-smita {
+      	hardware ethernet 14:da:e9:b2:6c:89;
+	fixed-address 192.168.100.149;
+  }
+ host admin-mahesh-ph {
+      	hardware ethernet 7c:61:93:f6:ff:fc;
+	fixed-address 192.168.100.27;
+  }
+ host admin-swati-ph {
+      	hardware ethernet 8c:71:f8:8e:32:b5;
+	fixed-address 192.168.2.67;
+  }
+ host lab-2-46 {
+      	hardware ethernet e0:cb:4e:de:9d:28;
+	fixed-address 192.168.50.95;
+  }
+ host lab-3-2 {
+      	hardware ethernet 00:23:54:a4:bb:bb;
+	fixed-address 192.168.50.100;
+  }
+ host thumb-1 {
+      	hardware ethernet 00:16:76:84:35:31;
+	fixed-address 192.168.100.28;
+  }
+ host wifi-school {
+      	hardware ethernet 00:26:5a:87:50:00;
+	fixed-address 192.168.100.230;
+  }
+ host lab-1-24 {
+      	hardware ethernet 00:23:54:a3:04:14;
+	fixed-address 192.168.50.24;
+  }
+ host lab-4-16 {
+      	hardware ethernet b8:97:5a:30:f4:5c;
+	fixed-address 192.168.50.162;
+  }
+ host lab-4-19 {
+      	hardware ethernet b8:97:5a:30:ff:06;
+	fixed-address 192.168.50.165;
+  }
+ host acad-atul {
+      	hardware ethernet 38:60:77:50:af:bb;
+	fixed-address 192.168.100.139;
+  }
+ host eshala-urmila {
+      	hardware ethernet e0:cb:4e:de:81:c2;
+	fixed-address 192.168.100.36;
+  }
+ host mgmt-sir-netbook-wireless {
+      	hardware ethernet e0:2a:82:a3:40:5f;
+	fixed-address 192.168.100.41;
+  }
+ host lab-2-42 {
+      	hardware ethernet e0:cb:4e:de:8a:87;
+	fixed-address 192.168.50.91;
+  }
+ host lab-5-4 {
+      	hardware ethernet 7c:05:07:0d:75:02;
+	fixed-address 192.168.50.204;
+  }
+ host eshala-nikhild {
+      	hardware ethernet e0:cb:4e:de:90:85;
+	fixed-address 192.168.100.154;
+  }
+ host eshala-shital {
+      	hardware ethernet 14:da:e9:eb:68:50;
+	fixed-address 192.168.100.130;
+  }
+ host nikhil-guest-lt1 {
+      	hardware ethernet 50:3c:c4:f3:63:78;
+	fixed-address 192.168.2.103;
+  }
+ host lab-3-37 {
+      	hardware ethernet e0:cb:4e:de:99:4b;
+	fixed-address 192.168.50.135;
+  }
+ host lab-3-48 {
+      	hardware ethernet 00:23:54:d5:e3:79;
+	fixed-address 192.168.50.146;
+  }
+ host admin-swati {
+      	hardware ethernet bc:ae:c5:8f:c0:40;
+	fixed-address 192.168.0.11;
+  }
+ host lab-1-13 {
+      	hardware ethernet 00:24:8c:0f:e8:99;
+	fixed-address 192.168.50.13;
+  }
+ host lab-3-26 {
+      	hardware ethernet e0:cb:4e:de:97:66;
+	fixed-address 192.168.50.124;
+  }
+ host lab-3-44 {
+      	hardware ethernet 00:23:54:a3:04:19;
+	fixed-address 192.168.50.142;
+  }
+ host lab-4-9 {
+      	hardware ethernet 00:26:18:d1:e3:f7;
+	fixed-address 192.168.50.155;
+  }
+ host admin-lt-2-wired {
+      	hardware ethernet 00:26:9e:33:e2:0c;
+	fixed-address 192.168.100.227;
+  }
+ host mgmt-micromax-tab {
+      	hardware ethernet 00:37:11:00:38:40;
+	fixed-address 192.168.100.181;
+  }
+ host lab-3-34 {
+      	hardware ethernet e0:cb:4e:de:9d:cd;
+	fixed-address 192.168.50.132;
+  }
+ host lab-3-3 {
+      	hardware ethernet 00:24:8c:05:1f:ca;
+	fixed-address 192.168.50.101;
+  }
+ host lab-4-31 {
+      	hardware ethernet e0:cb:4e:de:90:72;
+	fixed-address 192.168.50.177;
+  }
+ host lab-2-15 {
+      	hardware ethernet e0:cb:4e:de:7b:42;
+	fixed-address 192.168.50.64;
+  }
+ host lab-2-16 {
+      	hardware ethernet e0:cb:4e:de:95:07;
+	fixed-address 192.168.50.65;
+  }
+ host lab-2-27 {
+      	hardware ethernet e0:cb:4e:de:95:ad;
+	fixed-address 192.168.50.76;
+  }
+ host lab-4-36 {
+      	hardware ethernet 00:26:18:d1:e3:ec;
+	fixed-address 192.168.50.182;
+  }
+ host lab-5-1 {
+      	hardware ethernet 7c:05:07:0d:76:3e;
+	fixed-address 192.168.50.201;
+  }
+ host admin-pooja {
+      	hardware ethernet ec:a8:6b:77:47:af;
+	fixed-address 192.168.100.185;
+  }
+ host server-dell-1 {
+      	hardware ethernet bc:30:5b:f8:87:24;
+	fixed-address 192.168.100.103;
+  }
+ host wifi-office2 {
+      	hardware ethernet 00:17:7c:36:d4:ea;
+	fixed-address 192.168.4.14;
+  }
+ host lab-1-34 {
+      	hardware ethernet 00:24:8c:0f:e8:81;
+	fixed-address 192.168.50.34;
+  }
+ host lab-3-21 {
+      	hardware ethernet 00:24:8c:02:00:a3;
+	fixed-address 192.168.50.119;
+  }
+ host kg-new1 {
+      	hardware ethernet 00:1f:c6:c8:3b:2b;
+	fixed-address 192.168.100.204;
+  }
+ host kg-new2 {
+      	hardware ethernet 00:22:15:c4:81:91;
+	fixed-address 192.168.100.158;
+  }
+ host nikhil-guest-lt {
+      	hardware ethernet 3c:15:c2:ce:6d:62;
+	fixed-address 192.168.2.102;
+  }
+ host lab-4-6 {
+      	hardware ethernet e0:cb:4e:de:90:8c;
+	fixed-address 192.168.50.152;
+  }
+ host lab-5-24 {
+      	hardware ethernet 4c:72:b9:26:40:ba;
+	fixed-address 192.168.50.224;
+  }
+ host class-2-m12 {
+      	hardware ethernet c8:60:00:72:b4:d0;
+	fixed-address 192.168.100.14;
+  }
+ host mgmt-iball-adr-tab {
+      	hardware ethernet 00:22:F4:25:FB:BE;
+	fixed-address 192.168.100.142;
+  }
+ host mgmt-tablet-wired {
+      	hardware ethernet 00:26:9e:c9:bb:58;
+	fixed-address 192.168.100.211;
+  }
+ host lab-2-44 {
+      	hardware ethernet e0:cb:4e:de:90:7f;
+	fixed-address 192.168.50.93;
+  }
+ host lab-5-6 {
+      	hardware ethernet 7c:05:07:0d:75:56;
+	fixed-address 192.168.50.206;
+  }
+ host admin-abhay {
+      	hardware ethernet 00:22:15:c4:81:90;
+	fixed-address 192.168.5.20;
+  }
+ host admin-vrushali {
+      	hardware ethernet c8:60:00:72:b4:dc;
+	fixed-address 192.168.100.202;
+  }
+ host eshala-com5 {
+      	hardware ethernet e0:69:95:88:56:09;
+	fixed-address 192.168.100.194;
+  }
+ host eshala-studio {
+      	hardware ethernet e0:cb:4e:de:81:bb;
+	fixed-address 192.168.100.220;
+  }
+ host mn5-k {
+      	hardware ethernet 00:26:5a:87:50:ea;
+	fixed-address 192.168.100.232;
+  }
+ host mgmt-arpita-lt-wired {
+      	hardware ethernet 28:92:4a:1d:41:f7;
+	fixed-address 192.168.100.198;
+  }
+ host lab-1-20 {
+      	hardware ethernet 00:24:8c:0f:e8:8b;
+	fixed-address 192.168.50.20;
+  }
+ host lab-2-17 {
+      	hardware ethernet e0:cb:4e:de:7d:0a;
+	fixed-address 192.168.50.66;
+  }
+ host lab-2-19 {
+      	hardware ethernet e0:cb:4e:de:90:65;
+	fixed-address 192.168.50.68;
+  }
+ host lab-4-20 {
+      	hardware ethernet b8:97:5a:25:fa:d7;
+	fixed-address 192.168.50.166;
+  }
+ host admin-lt-3-wl {
+      	hardware ethernet 00:1f:3c:05:08:af;
+	fixed-address 192.168.100.248;
+  }
+ host mgmt-neha-samsung {
+      	hardware ethernet 60:21:C0:EF:3E:1F;
+	fixed-address 192.168.100.95;
+  }
+ host lab-1-47 {
+      	hardware ethernet 00:24:8c:05:20:5e;
+	fixed-address 192.168.50.47;
+  }
+ host lab-2-41 {
+      	hardware ethernet e0:cb:4e:de:9d:dc;
+	fixed-address 192.168.50.90;
+  }
+ host lab-5-16 {
+      	hardware ethernet 7c:05:07:0d:76:57;
+	fixed-address 192.168.50.216;
+  }
+ host mgmt-neha-wired {
+      	hardware ethernet 00:1e:ec:a5:e0:ea;
+	fixed-address 192.168.100.208;
+  }
+ host myshala-vishalnew {
+      	hardware ethernet 4c:72:b9:26:40:ba;
+	fixed-address 192.168.100.156;
+  }
+ host wifi-mnk5-office-wl {
+      	hardware ethernet ec:1a:59:19:7f:24;
+	fixed-address 192.168.100.192;
+  }
+ host lab-1-35 {
+      	hardware ethernet 00:23:54:d5:e2:70;
+	fixed-address 192.168.50.35;
+  }
+ host lab-1-8 {
+      	hardware ethernet 00:24:8c:02:00:8e;
+	fixed-address 192.168.50.8;
+  }
+ host eshala-avantee-lt-wired {
+      	hardware ethernet b4:b5:2f:2e:f4:2f;
+	fixed-address 192.168.100.196;
+  }
+ host mgmt-arpita-lt {
+      	hardware ethernet 40:2c:f4:07:9a:fe;
+	fixed-address 192.168.100.52;
+  }
+ host lab-1-12 {
+      	hardware ethernet e0:cb:4e:de:8a:48;
+	fixed-address 192.168.50.12;
+  }
+ host lab-4-12 {
+      	hardware ethernet e0:cb:4e:de:9d:11;
+	fixed-address 192.168.50.158;
+  }
+ host vinod-ph2 {
+      	hardware ethernet 70:e0:27:12:ba:4a;
+	fixed-address 192.168.2.11;
+  }
+ host acad-sanasi {
+      	hardware ethernet 78:84:3c:b2:b6:c2;
+	fixed-address 192.168.100.107;
+  }
+ host server-dell-mysql-new {
+      	hardware ethernet 52:54:00:f5:01:c5;
+	fixed-address 192.168.100.63;
+  }
+ host lab-3-27 {
+      	hardware ethernet e0:cb:4e:de:82:02;
+	fixed-address 192.168.50.125;
+  }
+ host lab-4-44 {
+      	hardware ethernet 00:23:54:a4:c1:92;
+	fixed-address 192.168.50.190;
+  }
+ host lab-4-47 {
+      	hardware ethernet e0:cb:4e:de:80:e6;
+	fixed-address 192.168.50.193;
+  }
+ host acad-vaishalic {
+      	hardware ethernet 00:19:d1:a1:67:b7;
+	fixed-address 192.168.100.129;
+  }
+ host mgmt-anvit-lt-wireless {
+      	hardware ethernet e0:2a:82:42:d3:5f;
+	fixed-address 192.168.100.39;
+  }
+ host lab-1-15 {
+      	hardware ethernet 00:23:54:a2:c6:00;
+	fixed-address 192.168.50.15;
+  }
+ host lab-1-49 {
+      	hardware ethernet 00:24:8c:05:1f:b5;
+	fixed-address 192.168.50.49;
+  }
+ host lab-4-14 {
+      	hardware ethernet e0:cb:4e:de:97:a3;
+	fixed-address 192.168.50.160;
+  }
+ host acad-nitin-sir-ph {
+      	hardware ethernet 58:12:43:93:e2:a9;
+	fixed-address 192.168.2.79;
+  }
+ host xerox-madekar {
+      	hardware ethernet E0:CB:4E:DE:90:62;
+	fixed-address 192.168.100.140;
+  }
+ host mgmt-tablet {
+      	hardware ethernet 00:1a:73:24:75:fd;
+	fixed-address 192.168.100.235;
+  }
+ host lab-1-43 {
+      	hardware ethernet 00:23:54:d5:ee:df;
+	fixed-address 192.168.50.43;
+  }
+ host lab-5-10 {
+      	hardware ethernet 7c:05:07:0d:75:6e;
+	fixed-address 192.168.50.210;
+  }
+ host arun-guest-ph {
+      	hardware ethernet 64:09:80:ce:d2:fc;
+	fixed-address 192.168.2.105;
+  }
+ host class-5-math {
+      	hardware ethernet e0:cb:4e:de:97:11;
+	fixed-address 192.168.3.200;
+  }
+ host lab-1-27 {
+      	hardware ethernet 00:24:8c:05:1f:cb;
+	fixed-address 192.168.50.27;
+  }
+ host lab-2-20 {
+      	hardware ethernet e0:cb:4e:de:7d:9e;
+	fixed-address 192.168.50.69;
+  }
+ host lab-5-23 {
+      	hardware ethernet 00:1e:8c:f5:44:75;
+	fixed-address 192.168.50.223;
+  }
+ host eshala-sanasi {
+      	hardware ethernet 78:84:3C:B2:B6:C2;
+	fixed-address 192.168.100.178;
+  }
+ host eshala-vidya {
+      	hardware ethernet bc:ae:c5:04:ef:95;
+	fixed-address 192.168.100.29;
+  }
+ host server-dell-2 {
+      	hardware ethernet bc:30:5b:f8:87:25;
+	fixed-address 192.168.100.104;
+  }
+ host lab-3-45 {
+      	hardware ethernet 00:24:8c:0f:e7:00;
+	fixed-address 192.168.50.143;
+  }
+ host lab-4-7 {
+      	hardware ethernet e0:cb:4e:de:7d:da;
+	fixed-address 192.168.50.153;
+  }
+ host class-3-p133 {
+      	hardware ethernet ec:a8:6b:29:35:d1;
+	fixed-address 192.168.100.17;
+  }
+ host class-4-p209 {
+      	hardware ethernet 74:27:ea:06:5b:ee;
+	fixed-address 192.168.100.8;
+  }
+ host eshala-abhishek {
+      	hardware ethernet 54:04:a6:b6:c7:79;
+	fixed-address 192.168.100.118;
+  }
+ host wifi-pinkhouse {
+      	hardware ethernet 00:22:b0:42:6e:3f;
+	fixed-address 192.168.100.237;
+  }
+ host lab-1-26 {
+      	hardware ethernet 00:23:54:a4:bc:3b;
+	fixed-address 192.168.50.26;
+  }
+ host eshala-minoti {
+      	hardware ethernet 8c:a9:82:72:fa:14;
+	fixed-address 192.168.100.144;
+  }
+ host eshala-sachint {
+      	hardware ethernet bc:ae:c5:a8:e8:6e;
+	fixed-address 192.168.100.30;
+  }
+ host server-pdc {
+      	hardware ethernet 52:54:00:13:4b:41;
+	fixed-address 192.168.1.4;
+  }
+ host lab-3-18 {
+      	hardware ethernet 00:23:54:a3:04:18;
+	fixed-address 192.168.50.116;
+  }
+ host lab-4-48 {
+      	hardware ethernet e0:cb:4e:de:89:ef;
+	fixed-address 192.168.50.194;
+  }
+ host acad-event-temp6 {
+      	hardware ethernet d0:df:9a:dc:47:a7;
+	fixed-address 192.168.2.75;
+  }
+ host eshala-avantee-lt-wifi {
+      	hardware ethernet 44:6d:57:5c:d8:82;
+	fixed-address 192.168.20.196;
+  }
+ host nikhil-guest-ph {
+      	hardware ethernet 28:cc:01:c5:a8:6d;
+	fixed-address 192.168.2.101;
+  }
+ host server {
+      	hardware ethernet 10:bf:48:7c:61:28;
+	fixed-address 192.168.100.170;
+  }
+ host lab-3-23 {
+      	hardware ethernet 00:24:8c:05:1f:c5;
+	fixed-address 192.168.50.121;
+  }
+ host mgmt-sir {
+      	hardware ethernet 00:19:d1:99:66:43;
+	fixed-address 192.168.100.245;
+  }
+ host lab-1-14 {
+      	hardware ethernet 00:23:54:a2:c6:04;
+	fixed-address 192.168.50.14;
+  }
+ host lab-2-39 {
+      	hardware ethernet e0:cb:4e:de:94:2d;
+	fixed-address 192.168.50.88;
+  }
+ host lab-3-16 {
+      	hardware ethernet 00:23:54:a2:c6:25;
+	fixed-address 192.168.50.114;
+  }
+ host lab-4-34 {
+      	hardware ethernet e0:cb:4e:de:90:87;
+#	fixed-address 192.168.50.180;
+	fixed-address 192.168.10.3;
+  }
+ host class-3-p109 {
+      	hardware ethernet 74:27:ea:06:5a:73;
+	fixed-address 192.168.100.21;
+  }
+ host eshala-deepak {
+      	hardware ethernet 54:04:a6:ef:64:79;
+	fixed-address 192.168.100.117;
+  }
+ host eshala-swapnil {
+      	hardware ethernet 14:da:e9:b5:e1:4e;
+	fixed-address 192.168.100.120;
+  }
+ host staff-11-12 {
+      	hardware ethernet b8:97:5a:30:f7:83;
+	fixed-address 192.168.100.169;
+  }
+ host lab-1-38 {
+      	hardware ethernet 00:24:8c:02:00:92;
+	fixed-address 192.168.50.38;
+  }
+ host acad-event-temp1 {
+      	hardware ethernet 60:36:dd:bd:7f:1d;
+	fixed-address 192.168.2.69;
+  }
+ host acad-gathering {
+      	hardware ethernet 00:24:8c:05:21:2c;
+	fixed-address 192.168.100.100;
+  }
+ host lab-1-30 {
+      	hardware ethernet 00:24:8c:02:00:a5;
+	fixed-address 192.168.50.30;
+  }
+ host lab-1-7 {
+      	hardware ethernet 00:24:8c:0f:E8:a3;
+	fixed-address 192.168.50.7;
+  }
+ host lab-5-5 {
+      	hardware ethernet 7c:05:07:0d:76:37;
+	fixed-address 192.168.50.205;
+  }
+ host mgmt-arpita-ph {
+      	hardware ethernet bc:79:ad:63:a1:7d;
+	fixed-address 192.168.100.171;
+  }
+ host lab-2-11 {
+      	hardware ethernet 00:24:8c:c5:d5:65;
+	fixed-address 192.168.50.60;
+  }
+ host lab-2-40 {
+      	hardware ethernet e0:cb:4e:de:99:31;
+	fixed-address 192.168.50.89;
+  }
+ host lab-3-1 {
+      	hardware ethernet 00:24:8c:ac:3e:dd;
+	fixed-address 192.168.50.99;
+  }
+ host lab-3-8 {
+      	hardware ethernet 48:5b:39:1d:a7:ad;
+	fixed-address 192.168.50.106;
+  }
+ host Access-pt-ground {
+      	hardware ethernet d3:a3:dc:16:e7;
+	fixed-address 192.168.100.134;
+  }
+ host eshala-deepti {
+      	hardware ethernet 14:da:e9:ed:8d:ff;
+	fixed-address 192.168.100.126;
+  }
+ host server-thumb-4 {
+      	hardware ethernet 00:17:61:10:7C:DD;
+	fixed-address 192.168.100.59;
+  }
+ host lab-2-3 {
+      	hardware ethernet e0:cb:4e:de:7b:48;
+	fixed-address 192.168.50.52;
+  }
+ host lab-3-38 {
+      	hardware ethernet e0:cb:4e:de:7d:db;
+	fixed-address 192.168.50.136;
+  }
+ host class-2-m11 {
+      	hardware ethernet ec:a8:6b:29:37:5b;
+	fixed-address 192.168.100.13;
+  }
+ host mahesh-sir-ph {
+        hardware ethernet A0:F4:50:7F:46:22;
+        fixed-address 192.168.10.55;
+ }
+ host aditya-dutta {
+        hardware ethernet DC:0E:A1:EA:7C:D9;
+        fixed-address 192.168.10.56;
+ }
+ host manish-kumar {
+        hardware ethernet 30:F9:ED:F2:06:81;
+        fixed-address 192.168.10.57;
+ }
+ host shreya-lp {
+        hardware ethernet F8:A9:63:8E:E7:77;
+        fixed-address 192.168.10.1;
+ }
+ host shreya-ph {
+        hardware ethernet c4:43:8f:ed:2c:65;
+        fixed-address 192.168.10.59;
+ }
+
+ host win-antivirus-updates {
+        hardware ethernet 52:54:00:c8:d6:71;
+        fixed-address 192.168.10.60;
+  }
+
+ host mgmt-home-arpita-lt1-wl {
+        hardware ethernet 30:10:b3:13:08:c9;
+        fixed-address 192.168.10.61;
+  }
+ host arun-sir{
+	hardware ethernet 34:36:3b:c5:6e:2c;
+	fixed-address 192.168.10.62;
+  }
+ host abhijeet-kasne{
+	hardware ethernet CC:AF:78:9F:83:81;
+	fixed-address 192.168.10.64;
+  }
+ host aditya-datta-win{
+	hardware ethernet 74:E5:43:05:9A:DF;
+	fixed-address 192.168.10.65;
+  }
+ host kedar{
+	hardware ethernet 68:5D:43:C1:6B:DC;
+	fixed-address 192.168.10.66;
+  }
+ host mobile{
+        hardware ethernet 90:68:c3:74:6a:62;
+        fixed-address 192.168.10.67;
+  }
+

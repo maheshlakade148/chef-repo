@@ -1,0 +1,52 @@
+{
+  "create": {
+    "actors": [
+      "maheshlakade148",
+      "pivotal"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "read": {
+    "actors": [
+      "maheshlakade148",
+      "pivotal"
+    ],
+    "groups": [
+      "admins",
+      "clients",
+      "users"
+    ]
+  },
+  "update": {
+    "actors": [
+      "maheshlakade148",
+      "pivotal"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "delete": {
+    "actors": [
+      "maheshlakade148",
+      "pivotal"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "grant": {
+    "actors": [
+      "maheshlakade148",
+      "pivotal"
+    ],
+    "groups": [
+      "admins"
+    ]
+  }
+}

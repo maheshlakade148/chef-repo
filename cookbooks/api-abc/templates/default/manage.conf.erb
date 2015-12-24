@@ -1,0 +1,6 @@
+server {
+     listen  <%= node[:vhost][:port] %>;
+    server_name <%= node[:vhost][:site_name] %>manage-abc.com www.<%= node[:vhost][:site_name] %>manage-abc.com;
+    root /home/manage;
+
+}
